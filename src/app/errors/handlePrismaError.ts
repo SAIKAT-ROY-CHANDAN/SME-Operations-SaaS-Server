@@ -1,4 +1,4 @@
-import { Prisma } from '../../../generated/prisma/client';
+import { Prisma } from "../../../generated/prisma/client";
 import { TErrorSources, TGenericErrorResponse } from '../types/errors.type';
 
 export const handlePrismaError = (

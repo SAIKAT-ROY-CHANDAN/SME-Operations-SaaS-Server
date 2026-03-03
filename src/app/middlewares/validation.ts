@@ -1,7 +1,7 @@
-import { AnyZodObject } from 'zod';
+import { ZodObject } from 'zod';
 import catchAsync from '../utils/catchAsync';
 
-const validation = (schema: AnyZodObject) => {
+const validation = (schema: ZodObject<any>) => {
   return catchAsync(async (req, res, next) => {
     await schema.parseAsync({
       body: req.body,
